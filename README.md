@@ -34,9 +34,15 @@ config:配置目录，包括端口号等，初学默认使用
 node——modules npm加载的项目依赖模块
 
 src:开发的目录
+
     assets: 放置一些图片，如logo等
+
     components；目录里面放置的组件文件，可以不用
+
     App.vue  项目人口文件，可以直接将组件写这里，不适用components目录
+
     main.js   项目核心文件
+
+    
     static   静态资源目录，如图片，字体等
     index.html   首页入口文件 可以填写额外代码  比如统计代码 meta信息
