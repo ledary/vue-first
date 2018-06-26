@@ -4,7 +4,7 @@
         {{msg}}
         <localComponent message="Hello!"></localComponent>
        
-          <button v-on:click="incrementHandler">子组件myvalue值加1</button>
+          <button class="btn btn-default" v-on:click="incrementHandler">子组件myvalue值加1</button>
     </div>
 
 
@@ -49,7 +49,8 @@ export default {
     },
    methods: {
     incrementHandler: function () {
-      this.myValue += 1
+      this.myValue += 1;
+     // window.open("http://localhost:8080/#/demoone");
     
     }
   },
@@ -62,14 +63,7 @@ export default {
 
 <!-- scoped  样式，使该样式只能应用于此组件 -->
 <style scoped>
-.loading_box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 5rem;
-    color: royalblue;
-}
+
 
 </style>
 

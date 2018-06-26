@@ -2,7 +2,7 @@
   <div id="app">
    <GlobalComponent :value="value" :item="'mmm'" v-on:increment="doValue"></GlobalComponent>
    <p>传递的值：{{value}}</p>
-  <button v-on:click="addValue">父组件myvalue值加1</button>
+  <button class="btn btn-default"  v-on:click="addValue">父组件myvalue值加1</button>
   </div>
 </template>
 

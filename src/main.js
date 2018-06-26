@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import  GlobalComponent  from './components/GlobalComponent'
+import * as directives from './components/directive/index'
 
 import * as filters from './components/filters/index'
 Vue.config.productionTip = false
@@ -11,6 +12,10 @@ Vue.component("GlobalComponent",GlobalComponent)
 Vue.use(GlobalComponent)
 Object.keys(filters).forEach((key) => {
   Vue.filter(key, filters[key]);
+ })
+
+ Object.keys(directives).forEach((key) => {
+  Vue.directive(key,directives[key])
  })
 /* eslint-disable no-new */
 new Vue(
