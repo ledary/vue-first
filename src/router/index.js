@@ -11,6 +11,7 @@ import DemoEight from '@/components/DemoEight'
 import DemoSeven from '@/components/DemoSeven'
 import GlobalChild from '@/components/GlobalChild'
 import DemoDirective from '@/components/DemoDirective'
+import DemoRouter from '@/components/DemoRouter'
 
 Vue.use(Router)
 
@@ -70,6 +71,11 @@ export default new Router({
       path:'/demodirective',
       name:'DemoDirective',
       component:DemoDirective
+    },
+    {
+      path:'/demorouter',
+      name:'DemoRouter',
+      component:DemoRouter
     }
 
     

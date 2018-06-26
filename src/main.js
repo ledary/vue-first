@@ -10,6 +10,9 @@ import * as filters from './components/filters/index'
 Vue.config.productionTip = false
 Vue.component("GlobalComponent",GlobalComponent)
 Vue.use(GlobalComponent)
+
+  // 遍历所有导出的过滤器并添加到全局过滤器
+
 Object.keys(filters).forEach((key) => {
   Vue.filter(key, filters[key]);
  })
@@ -24,6 +27,5 @@ new Vue(
   router,
   components: { App,GlobalComponent },
   template: '<App/>',
-  // 遍历所有导出的过滤器并添加到全局过滤器
 
 })

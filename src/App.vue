@@ -2,6 +2,7 @@
   <div style="height:100%">
   <div class="inner_div">
  <ul>
+      <li><router-link to="/">Hello World</router-link></li>
       <li><router-link to="/demoone">第一个demo</router-link></li>
       <li><router-link to="/demotwo">第贰个demo</router-link></li>
       <li><router-link to="/demotird">第叄个demo</router-link></li>
